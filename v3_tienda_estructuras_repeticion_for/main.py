@@ -1,3 +1,20 @@
+'''
+Tienda: Versión 3.0
+Temas:
+    - Estructuras de repetición: for
+
+Explicación:
+    Se soluciona los problemas de la versión 2.0
+        - No se puede ingresar más de un producto.
+
+Problemas de la versión 3.0:
+    - Usualmente, se desconoce la cantidad de productos que se van a procesar.
+
+Cómo solucionar los problemas:
+    - Utilizar una estructura de repetición donde no se conoce la cantidad de veces que se va a repetir el bloque de código.
+    en este caso, se utiliza la estructura de repetición while
+'''
+
 cuantos_productos = input("Ingrese la cantidad de productos: ")
 total_costo = 0
 if len(cuantos_productos) == 0:
