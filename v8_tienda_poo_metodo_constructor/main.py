@@ -22,22 +22,32 @@ class Producto:
         if(len(nombre) == 0):
             raise ValueError("El nombre del producto no puede estar vacío")
         
-        self.precio = precio
+        try:
+            self.precio = float(precio)
+        except ValueError as e:
+            raise ValueError(f"El precio del producto '{nombre}' debe ser un valor numérico")
 
-
+        if(self.precio < 0):
+            raise ValueError(f"El precio del producto '{nombre}' no puede ser negativo")
 
 class Tienda:
     nombre = ""
 
-producto1 = Producto("Producto 1", 100.0)
+try:
+    producto1 = Producto("Producto 1", 100.0)
+    producto1.precio = -100.0 # PROBLEMA: No se puede asignar un valor negativo al precio del producto
+    # SOLUCIÓN: Implementar encapsulamiento
 
+    producto2 = Producto("Producto 2", 600.0)
 
-producto2 = Producto("Producto 2", 200.0)
+    producto3 = Producto("Producto 3", 300.0)
 
-producto3 = Producto("Producto 3", 300.0)
+    producto4 = Producto("Producto 4", 400.0)
 
-producto4 = Producto("Producto 4", 400.0)
+    total_costo = producto1.precio + producto2.precio + producto3.precio + producto4.precio
+    print(f"El total de la compra es {total_costo}")
 
-total_costo = producto1.precio + producto2.precio + producto3.precio + producto4.precio
-print(f"El total de la compra es {total_costo}")
+except ValueError as e:
+    print(e)
+
 
