@@ -1,0 +1,70 @@
+
+Enunciado:
+Una aerolínea vende pasajes y paquetes turísticos a diferentes destinos del mundo.
+La aerolínea tiene una política de cobro de equipaje como sigue:
+- Los pasajeros de clase económica pueden llevar hasta 10 kilos de equipaje
+- Los pasajeros de clase ejecutiva pueden llevar hasta 20 kilos de equipaje
+- Los pasajeros de clase premium pueden llevar hasta 30 kilos de equipaje
+
+El costo por kilo adicional de equipaje depende de si es un pasajero de clase económica, ejecutiva o premium, de
+la siguiente manera: el kilo adicional del pasajero de clase económica cuesta 5000 pesos de más.
+El kilo adicional del pasajero de clase ejecutiva cuesta 10000 pesos más
+El kilo adicional del pasajero de clase premium cuesta el 1% del valor del tiquete
+
+La aerolínea le permite a los pasajeros transportar cargas especiales de la siguiente forma:
+- Bicicletas: tienen un cobro X por cada kilo
+- Mascotas: Dependiendo de la mascota, la aerolínea cobra así:
+    - Perros: Cada perro cuesta un 5% del valor del tiquete del pasajero
+    - Gatos: Cada gato cuesta un 2% del valor del tiquete del pasajero
+
+Un mismo pasajero puede llevar diferentes cargas especiales.
+
+Si el pasajero es un infante (de 0 a 13 años), tiene un descuento especial en el tiquete para ese destino del 7%
+
+La aerolínea desea un sistema de información que permita realizar lo siguiente:
+- Crear vuelos de una ciudad origen a una ciudad destino
+- Vender tiquetes de los vuelos existentes a los pasajeros
+- Hacer check-in:   El proceso del check-in significa pesar las maletas de los pasajeros y cobrarles por equipaje adicional 
+                    o carga especial
+- Se debe permitir la devolución de pasajes
+- La aerolínea desea conocer:
+    - Cual fue el trayecto (origen, destino) que más dinero recaudó y cuánto dinero recaudó
+    - Quienes viajan más a cierto destino, las mujeres o los hombres. La aerolínea desea saber esto para ofrecer campañas dirigidas
+    y paquetes promocionales.
+    - El costo promedio del tiquete por trayecto
+    - El recaudo total de la aerolínea por concepto de venta de tiquetes
+    - El recaudo total de la aerolínea por concepto de venta de equipaje extra
+
+
+
+
+Parámetros de entrega:
+    - Se debe utilizar lo visto hasta ahora en clase:
+        - Variables
+        - Entrada y salida de datos
+        - Estructuras de control: if, else, elif
+        - Estructuras de repetición: for, while
+        - Manejo de errores: try, except, validaciones de entrada de datos: números, valores negativos, etc.
+        - de POO:
+            - Clases
+            - Objetos
+            - Atributos, propiedades
+            - Método constructor
+            - Métodos
+            - Encapsulamiento
+            - Herencia
+            - Polimorfismo
+
+    - No se pueden poner comentarios en el código
+    - El proyecto debe estar en GitHub
+    - El proyecto debe estar en Python
+    - Se debe realizar de forma individual, no se aceptan grupos
+    - Fechas de entrega, sustentación y asesoría:
+        - Asesoría: 09 de abril del 2025. Deben traer trabajo adelantado para la asesoría. Se calificará que traigan código adelantado para esta asesoría.
+        - El programa debe estar terminado y subido a GitHub el día 18 de abril del 2025. Se califica puntualidad en esta fecha
+         de entrega. Cada dia de retraso baja 1 unidad en la calificación final
+        - Fecha de entrega y sustentación individual: 23 de abril del 2025
+    - Porcentajes de calificación:
+        - 40%: Código funcionando
+        - 60%: Sustentación. La sustentación puede ser un parcial relacionado con el el proyecto realizado, por ejemplo: agregar
+        funcionalidades al proyecto como calcular un promedio de edad de los pasajeros, agregar validaciones, etc.
