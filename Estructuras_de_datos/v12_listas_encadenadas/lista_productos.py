@@ -26,4 +26,24 @@ class ListaProductos:
             nodo_actual = nodo_actual.siguiente
 
         return total
-            
+    
+
+    def buscar_producto_segun_nombre(self, nombre_a_buscar):
+        nodo_tmp = self._head
+        while nodo_tmp is not None:
+            if nodo_tmp.producto.nombre == nombre_a_buscar:
+                return nodo_tmp.producto
+            nodo_tmp = nodo_tmp.siguiente
+
+        return None
+    
+    def eliminar_producto_segun_nombre(self, nombre_a_eliminar):
+        if self._head.producto.nombre == nombre_a_eliminar:
+            self._head = self._head.siguiente
+        else:
+            nodo_tmp = self._head
+            while nodo_tmp.siguiente is not None:
+                if nodo_tmp.siguiente.producto.nombre == nombre_a_eliminar:
+                    nodo_tmp.siguiente = nodo_tmp.siguiente.siguiente
+                else:
+                    nodo_tmp = nodo_tmp.siguiente

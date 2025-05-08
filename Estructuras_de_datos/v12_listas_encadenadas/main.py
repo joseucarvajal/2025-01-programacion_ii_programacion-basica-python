@@ -10,7 +10,9 @@ while True:
     print("Ingrese una opcion:")
     print("1. Agregar producto")
     print("2. Mostrar total de la compra")
-    print("3. Salir")
+    print("3. Buscar producto")
+    print("4. Eliminar producto")
+    print("5. Salir")
 
     opcion = int(input("Ingrese una opcion: "))
 
@@ -25,5 +27,15 @@ while True:
         print(f"El total de la compra es: {total}")
 
     elif opcion == 3:
+        nombre_producto_a_buscar = input("Ingrese el nombre del producto a buscar: ")
+        producto = lista_productos.buscar_producto_segun_nombre(nombre_producto_a_buscar)
+        if(producto is not None):
+            print(f"Producto encontrado: {producto.nombre} - {producto.precio}")
+        else:
+            print(f"Producto no encontrado")
+    elif opcion == 4:
+        nombre_producto_a_eliminar = input("Ingrese el nombre del producto a eliminar: ")
+        lista_productos.eliminar_producto_segun_nombre(nombre_producto_a_eliminar)
+    elif opcion == 5:
         break
     
